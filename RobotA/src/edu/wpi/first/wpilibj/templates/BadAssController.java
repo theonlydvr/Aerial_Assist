@@ -4,10 +4,13 @@ import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.parsing.IInputOutput;
 
+/*
+ * This is the class that allows for the use of the xbox controller to direct the robot
+ */
 public class BadAssController extends GenericHID implements IInputOutput {
     
-    private final DriverStation m_ds;
-    private final int m_port;
+    private final DriverStation m_ds; // reference to the DriverStation to send input data
+    private final int m_port; // port in the DriverStation in which the controller is plugged in
     
     public static class AxisType {
         public final int value;
